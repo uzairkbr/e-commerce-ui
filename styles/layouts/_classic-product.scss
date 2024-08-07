@@ -1,0 +1,37 @@
+.classic-product {
+  background-color: var(--dark-green-color);
+  color: var(--light-text-color);
+
+  .container {
+    padding-top: 112px;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &-information {
+    max-width: 509px;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  &__paragraph {
+    max-width: 341px;
+  }
+
+  &-button {
+    gap: 34px;
+    align-items: center;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 15px 40px;
+  }
+
+  &-image {
+    max-width: 510px;
+    width: 100%;
+    margin-bottom: -5px;
+  }
+}

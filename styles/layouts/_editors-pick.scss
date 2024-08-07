@@ -1,0 +1,60 @@
+.editor-pick {
+  background-color: #FAFAFA;
+  
+  .small-container {
+    text-align: center;
+  }
+
+  p {
+    margin: 10px auto 48px auto;
+  }
+
+  &-category {
+    gap: 30px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .category {
+    &-3 {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &-men {
+      button {
+        bottom: 26px;
+        left: 31px;
+        padding: 12px 66px;
+      }
+    }
+
+    &-women {
+      button {
+        bottom: 23px;
+        left: 14px;
+        padding: 12px 33px;
+      }
+    }
+
+    &-accessories {
+      button {
+        bottom: 18px;
+        left: 18px;
+        padding: 12px 26px;
+      }
+    }
+
+    &-kids {
+      button {
+        bottom: 18px;
+        left: 18px;
+        padding: 12px 40px;
+      }
+    }
+  }
+
+
+}

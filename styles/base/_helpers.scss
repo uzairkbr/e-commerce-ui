@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+
+.small-container {
+  margin: 0 auto;
+  padding: 80px 40px;
+  max-width: var(--small-container-width);
+}
+
+img {
+  width: 100%;
+}

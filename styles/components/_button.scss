@@ -1,0 +1,19 @@
+.button {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  &-green {
+    background-color: var(--green-color);
+    color: var(--light-text-color);
+    border-radius: 5px;
+  }
+
+  &-white {
+    background-color: var(--light-text-color);
+  }
+}

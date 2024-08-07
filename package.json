@@ -1,0 +1,10 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "sass --watch src/styles:dist/styles"
+  },
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}

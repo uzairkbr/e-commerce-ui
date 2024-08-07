@@ -1,0 +1,83 @@
+.featured-post {
+  .small-container{
+    text-align: center;
+
+    .h6 {
+      color: var(--primary-color);
+    }
+  }
+  
+  &__paragraph {
+    max-width: 469px;
+    margin: 0 auto;
+    color: var(--secondary-text-color);
+  }
+
+  &__information {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__cards {
+    margin-top: 80px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  &__card {
+    text-align: left;
+    max-width: 348px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0, rgba(0, 0, 0, 0.1) 0 0 2px 0;
+    position: relative;
+
+    &::before {
+      content: "new";
+      padding: 5px 10px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 3px;
+      color: var(--light-text-color);
+      text-transform: uppercase;
+      background-color: #E74040;  
+    }
+
+    img {
+      width: 348px;
+      height: 300px;
+    }
+  }
+
+  .card-information {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+    padding: 25px;
+
+    p {
+      max-width: 280px;
+    }
+  }
+
+  .information-categories {
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-timing {
+    justify-content: space-between;
+    align-items: center;
+
+    .timing_date,
+    .timing_comment {
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}

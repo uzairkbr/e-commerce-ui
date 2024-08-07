@@ -1,0 +1,29 @@
+.carousel_items{ 
+  left: 657px;
+  bottom: 49px;
+  gap: 1px;
+}
+
+.item {
+  width: 62px;
+  height: 10px;
+  opacity: 0.5;
+  background-color: var(--light-text-color);
+}
+
+.active {
+  opacity: 1;
+}
+
+.left-icon,
+.right-icon {
+  top: 401px;
+}
+
+.left-icon {
+  left: 49px;
+}
+
+.right-icon {
+  right: 49px;
+}

@@ -1,0 +1,40 @@
+.announcement-bar {
+  background-color: var(--dark-color);
+  padding: 10px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  p {
+    color: var(--light-text-color);
+    font-weight: 700;
+  }
+
+  .container,
+  &__contact-info,
+  &__number,
+  &__email,
+  &__socials,
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contact-info {
+    gap: 20px;
+  }
+
+  &__email,
+  &__number {
+    gap: 5px;
+  }
+
+  &__socials {
+    gap: 10px;
+  }
+  
+  &__icons{
+    gap: 10px;
+  }
+}

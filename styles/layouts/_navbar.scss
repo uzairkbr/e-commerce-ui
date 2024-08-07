@@ -1,0 +1,28 @@
+.navbar {
+  padding: 28px 19px;
+
+  &__brand {
+    gap: 119px;
+  }
+
+  &__link-list,
+  &__icons,
+  &__search {
+    gap: 15px;
+  }
+
+  .link-flex {
+    gap: 9px;
+  }
+
+  &__icons{
+    color: var(--primary-color);
+  }
+
+  .cart,
+  .fav {
+    align-items: center;
+    gap: 5px;
+  }
+
+}

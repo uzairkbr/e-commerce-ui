@@ -1,0 +1,23 @@
+.neural-universe {
+
+  .container {
+    gap: 110px;
+    align-items: center;
+  }
+
+  &-image {
+    max-width: 704px;
+  } 
+
+  &-information {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 375px;
+  }
+
+  .button-white {
+    border: 1px solid var(--green-color);
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+}
