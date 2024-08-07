@@ -60,16 +60,16 @@ img {
 :root {
   --container-width: 1440px;
   --small-container-width: 1160px;
+  --font-family: "Montserrat";
   --dark-color: #252B42;
-  --light-text-color: #fff;
-  --second-text-color:#737373;
-  --primary-color: #23A6F0;
-  --dark-green-color: #23856D;
-  --orange-color: #E77C40;
   --green-color: #2DC071;
   --muted-color: #BDBDBD;
+  --orange-color: #E77C40;
+  --light-text-color: #fff;
+  --primary-color: #23A6F0;
+  --second-text-color:#737373;
+  --dark-green-color: #23856D;
   --active-blue-color: #8EC2F2;
-  --font-family: "Montserrat";
 }
 
 body,
@@ -106,6 +106,10 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 ul {
