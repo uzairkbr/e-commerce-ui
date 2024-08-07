@@ -112,6 +112,10 @@ ul {
   list-style: none;
 }
 
+ul li {
+  cursor: pointer;
+}
+
 .button {
   border: none;
   cursor: pointer;
@@ -155,6 +159,7 @@ a {
 .left-icon,
 .right-icon {
   top: 401px;
+  cursor: pointer;
 }
 
 .left-icon {
@@ -404,7 +409,7 @@ a {
   color: var(--second-text-color);
 }
 .featured-cards {
-  gap: 30px;
+  gap: 80px 30px;
   flex-wrap: wrap;
 }
 .featured-card {
