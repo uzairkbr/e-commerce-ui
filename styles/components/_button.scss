@@ -4,16 +4,44 @@
   font-size: 14px;
   font-weight: 700;
   padding: 15px 40px;
+  border: 1px solid transparent;
   text-align: center;
+  display: inline-block;
   text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
   
   &-green {
     background-color: var(--green-color);
     color: var(--light-text-color);
     border-radius: 5px;
+
+    &:hover {
+     background-color: transparent;
+     border: 1px solid #fff;
+    }
   }
 
   &-white {
     background-color: var(--light-text-color);
+    
+    &:hover {
+      background-color: var(--green-color);
+     }
+  }
+
+  &-blue {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+
+    &:hover {
+      background-color: transparent;
+      color: var(--dark-color);
+      border: 1px solid var(--input-border-color);
+    }
+  }
+
+  &-transparent {
+    background-color: transparent;
   }
 }

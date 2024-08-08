@@ -1,12 +1,18 @@
 .editor-pick {
-  background-color: #FAFAFA;
+  background-color: var(--secondary-bg-color);
+  padding: var(--container-padding);
   
   .small-container {
     text-align: center;
   }
 
+  .h3 {
+    color: var(--dark-color);
+  }
+
   p {
     margin: 10px auto 48px auto;
+    color: var(--second-text-color);
   }
 
   &-category {
@@ -55,6 +61,4 @@
       }
     }
   }
-
-
 }

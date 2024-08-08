@@ -6,6 +6,7 @@
 
 @import './abstracts/abstract';
 
+@import './components/icon';
 @import './components/list';
 @import './components/button';
 @import './components/anchor';
@@ -14,6 +15,7 @@
 
 @import './layouts/hero';
 @import './layouts/navbar';
+@import './layouts/footer';
 @import './layouts/anouncement';
 @import './layouts/editors-pick';
 @import './layouts/featured-post';

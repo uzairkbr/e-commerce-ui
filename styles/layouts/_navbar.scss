@@ -1,8 +1,16 @@
 .navbar {
-  padding: 28px 19px;
+  padding: 28px 30px;
 
   &__brand {
     gap: 119px;
+
+    h3 {
+      color: var(--dark-color);
+    }
+  }
+
+  &__link-list {
+    color: var(--second-text-color);
   }
 
   &__link-list,
@@ -24,5 +32,4 @@
     align-items: center;
     gap: 5px;
   }
-
 }

@@ -1,0 +1,10 @@
+.icon {
+  cursor: pointer;
+
+  &:hover {
+    path {
+      fill: #1877F2;
+    }
+  }
+}
+
