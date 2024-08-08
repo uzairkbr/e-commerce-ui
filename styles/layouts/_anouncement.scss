@@ -1,9 +1,17 @@
+$gap-small: 5px;
+$gap-medium: 10px;
+$gap-large: 20px;
+
 .announcement-bar {
   background-color: var(--dark-color);
-  padding: 10px 24px;
+  padding: 10px 30px;
   position: sticky;
   top: 0;
   z-index: 999;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
 
   p {
     color: var(--light-text-color);
@@ -22,19 +30,16 @@
   }
 
   &__contact-info {
-    gap: 20px;
+    gap: $gap-large;
   }
 
-  &__email,
-  &__number {
-    gap: 5px;
-  }
-
-  &__socials {
-    gap: 10px;
+  &__socials,
+  &__icons {
+    gap: $gap-medium;
   }
   
-  &__icons{
-    gap: 10px;
+  &__email,
+  &__number {
+    gap: $gap-small;
   }
 }

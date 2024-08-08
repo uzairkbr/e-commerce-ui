@@ -1,4 +1,6 @@
 .featured {
+  padding: var(--container-padding);
+
   .small-container {
     text-align: center;
   }
@@ -8,7 +10,12 @@
     gap: 10px;
     margin-bottom: 80px;
 
-    .h4 {
+    .h3 {
+      color: var(--dark-color);
+    }
+
+    .h4,
+    p {
       color: var(--second-text-color);
     }
   }
@@ -20,6 +27,15 @@
 
   &-card {
     max-width: 239px;
+
+    .h5 {
+      color: var(--dark-color);
+    }
+
+    p {
+      font-weight: 700;
+      color: var(--second-text-color);
+    }
   }
 
   .card-information {
@@ -63,3 +79,4 @@
     background-color: var(--dark-color);
   }
 }
+

@@ -1,4 +1,7 @@
 .featured-post {
+  padding: var(--container-padding);
+  padding-top: 112px;
+
   .small-container{
     text-align: center;
 
@@ -10,12 +13,16 @@
   &__paragraph {
     max-width: 469px;
     margin: 0 auto;
-    color: var(--secondary-text-color);
+    color: var(--second-text-color);
   }
 
   &__information {
     flex-direction: column;
     gap: 10px;
+
+    .h2 {
+      color: var(--dark-color);
+    }
   }
 
   &__cards {
@@ -24,7 +31,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
   }
 
   &__card {
@@ -51,6 +57,18 @@
       width: 348px;
       height: 300px;
     }
+
+    .h4 {
+      color: var(--dark-color);
+    }
+
+    p {
+      color: var(--second-text-color);
+    }
+
+    .active {
+      color: var(--active-blue-color);
+    }
   }
 
   .card-information {
@@ -70,14 +88,33 @@
     align-items: center;
   }
 
+  .button {
+    padding: 5px 10px 5px 0;
+    align-items: center;
+    gap: 10px;
+    max-width: 150px;
+    color: var(--second-text-color);
+  }
+
   &-timing {
     justify-content: space-between;
     align-items: center;
+    margin-block: 15px;
 
     .timing_date,
     .timing_comment {
       align-items: center;
       gap: 5px;
+    }
+  }
+
+  .button-transparent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover {
+      color: var(--dark-color);
     }
   }
 }
