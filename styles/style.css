@@ -159,7 +159,8 @@ ul li {
   background-color: var(--light-text-color);
 }
 .button-white:hover {
-  background-color: var(--green-color);
+  background-color: var(--dark-color);
+  color: var(--light-text-color);
 }
 .button-blue {
   background-color: var(--primary-color);
@@ -184,6 +185,11 @@ a {
   bottom: 49px;
   gap: 1px;
 }
+@media (max-width: 992px) {
+  .carousel_items {
+    display: none;
+  }
+}
 
 .item {
   width: 62px;
@@ -204,7 +210,7 @@ a {
 @media (max-width: 768px) {
   .left-icon,
   .right-icon {
-    top: 540px;
+    top: 570px;
   }
 }
 
@@ -229,7 +235,6 @@ a {
 .hero .container {
   width: 100%;
   max-width: 100%;
-  border: 2px solid red;
 }
 .hero-product-information {
   color: var(--light-text-color);
@@ -240,19 +245,56 @@ a {
   margin: 0 auto;
   padding-block: 160px;
 }
+.hero-product-information p {
+  font-size: 20px;
+  max-width: 376px;
+}
+@media (max-width: 1280px) {
+  .hero-product-information {
+    max-width: 800px;
+  }
+}
+@media (max-width: 992px) {
+  .hero-product-information {
+    max-width: 600px;
+  }
+  .hero-product-information .h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hero-product-information p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  .hero-product-information p {
+    max-width: 291px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-product-information {
+    padding-inline: 40px;
+    align-items: center;
+    text-align: center;
+  }
+}
 .hero img {
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-}
-.hero p {
-  font-size: 20px;
-  max-width: 376px;
+  min-height: 100%;
 }
 .hero .left-icon,
 .hero .right-icon {
   top: 283px;
+}
+@media (max-width: 768px) {
+  .hero .left-icon,
+  .hero .right-icon {
+    top: 300px;
+  }
 }
 .hero .button {
   font-size: 24px;
@@ -365,12 +407,19 @@ a {
   padding-block: 25px;
   color: var(--second-text-color);
 }
-.footer-brand {
-  padding-block: 40px;
-}
 .footer-brand, .footer-icons {
   justify-content: space-between;
   align-items: center;
+}
+.footer-brand {
+  padding-block: 40px;
+}
+@media (max-width: 768px) {
+  .footer-brand {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
 }
 .footer-icons {
   gap: 20px;
@@ -380,6 +429,11 @@ a {
   padding-block: 50px;
   justify-content: space-between;
   gap: 30px;
+}
+@media (max-width: 992px) {
+  .footer-links-container {
+    flex-direction: column;
+  }
 }
 .footer .h5 {
   margin-bottom: 20px;
@@ -407,6 +461,7 @@ a {
   padding: 15px;
   border: 1px solid var(--input-border-color);
   border-radius: 5px;
+  background-color: #F9F9F9;
 }
 .footer .button {
   padding: 15px 22px;
@@ -475,6 +530,7 @@ a {
 .editor-pick img {
   -o-object-fit: cover;
      object-fit: cover;
+  max-width: 100%;
 }
 .editor-pick .button {
   font-size: 16px;
@@ -523,6 +579,13 @@ a {
   flex-direction: column;
   gap: 10px;
 }
+@media (max-width: 786px) {
+  .featured-post__information {
+    margin-bottom: 80px;
+    max-width: 300px;
+    margin: 0 auto 80px auto;
+  }
+}
 .featured-post__information .h2 {
   color: var(--dark-color);
 }
@@ -533,11 +596,26 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 786px) {
+  .featured-post__cards {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .featured-post__card {
   text-align: left;
   max-width: 348px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0, rgba(0, 0, 0, 0.1) 0 0 2px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0;
   position: relative;
+}
+@media (max-width: 786px) {
+  .featured-post__card {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 .featured-post__card::before {
   content: "new";
@@ -556,6 +634,12 @@ a {
   width: 348px;
   height: 300px;
 }
+@media (max-width: 786px) {
+  .featured-post__card img {
+    width: 100%;
+    height: 100%;
+  }
+}
 .featured-post__card .h4 {
   color: var(--dark-color);
 }
@@ -570,6 +654,11 @@ a {
   gap: 10px;
   margin-top: 25px;
   padding: 25px;
+}
+@media (max-width: 786px) {
+  .featured-post .card-information {
+    margin-top: 0;
+  }
 }
 .featured-post .card-information p {
   max-width: 280px;
@@ -614,7 +703,7 @@ a {
   justify-content: center;
   gap: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .classic-product .container {
     flex-direction: column;
     align-items: center;
@@ -629,6 +718,11 @@ a {
   flex-direction: column;
   gap: 30px;
   margin-top: 60px;
+}
+@media (max-width: 1280px) {
+  .classic-product-information {
+    max-width: 400px;
+  }
 }
 @media (max-width: 768px) {
   .classic-product-information {
@@ -654,6 +748,7 @@ a {
     font-size: 20px;
     margin: 0 auto;
     max-width: 80%;
+    line-height: 30px;
   }
 }
 .classic-product-button {
@@ -679,6 +774,14 @@ a {
 .neural-universe .container {
   gap: 110px;
   align-items: center;
+  padding-inline: 40px;
+}
+@media (max-width: 992px) {
+  .neural-universe .container {
+    flex-direction: column-reverse;
+    padding-top: 120px;
+    text-align: center;
+  }
 }
 .neural-universe-image {
   max-width: 704px;
@@ -687,6 +790,7 @@ a {
   flex-direction: column;
   gap: 30px;
   max-width: 375px;
+  margin: 0 auto;
 }
 .neural-universe-information .h2 {
   color: var(--dark-color);
@@ -697,18 +801,44 @@ a {
 .neural-universe-information .h5 {
   color: var(--muted-color);
 }
-.neural-universe .button-white {
+@media (max-width: 768px) {
+  .neural-universe-buttons {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+}
+.neural-universe-buttons .button-white {
   border: 1px solid var(--green-color);
   color: var(--green-color);
   border-radius: 5px;
   margin-left: 10px;
 }
-.neural-universe .button-white:hover {
+.neural-universe-buttons .button-white:hover {
   color: var(--light-text-color);
 }
-.neural-universe .button-green:hover {
+@media (max-width: 640px) {
+  .neural-universe-buttons .button-white {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  .neural-universe-buttons .button-white:hover {
+    background-color: var(--primary-color);
+  }
+}
+.neural-universe-buttons .button-green:hover {
   border: 1px solid var(--green-color);
   color: var(--green-color);
+}
+@media (max-width: 640px) {
+  .neural-universe-buttons .button-green {
+    background-color: var(--primary-color);
+  }
+  .neural-universe-buttons .button-green:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
 }
 
 .featured {

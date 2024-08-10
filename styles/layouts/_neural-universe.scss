@@ -2,6 +2,13 @@
   .container {
     gap: 110px;
     align-items: center;
+    padding-inline: 40px;
+
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+      padding-top: 120px;
+      text-align: center;
+    }
   }
 
   &-image {
@@ -12,6 +19,7 @@
     flex-direction: column;
     gap: 30px;
     max-width: 375px;
+    margin: 0 auto;
 
     .h2 {
       color: var(--dark-color);
@@ -26,21 +34,48 @@
     }
   }
 
-  .button-white {
-    border: 1px solid var(--green-color);
-    color: var(--green-color);
-    border-radius: 5px;
-    margin-left: 10px;
-
-    &:hover {
-      color: var(--light-text-color);
+  &-buttons {
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
     }
-  }
 
-  .button-green {
-    &:hover {
+    .button-white {
       border: 1px solid var(--green-color);
       color: var(--green-color);
+      border-radius: 5px;
+      margin-left: 10px;
+  
+      &:hover {
+        color: var(--light-text-color);
+      }
+
+      @media (max-width: 640px) {
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  
+    .button-green {
+      &:hover {
+        border: 1px solid var(--green-color);
+        color: var(--green-color);
+      }
+      
+      @media (max-width: 640px) {
+        background-color: var(--primary-color);
+        
+        &:hover {
+          background-color: transparent;
+          border: 1px solid var(--primary-color);
+          color: var(--primary-color);
+        }
+      }
     }
   }
 }

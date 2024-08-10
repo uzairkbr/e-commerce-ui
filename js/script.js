@@ -6,6 +6,12 @@
   hambugerMenu.addEventListener("click", function() {
     if (navbarLinkList){
       navbarLinkList.classList.toggle("unhide-navbar-link-list");
+
+      if (navbarLinkList.classList.contains("unhide-navbar-link-list")) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = "auto";
+      }
     }
    })
 })();
