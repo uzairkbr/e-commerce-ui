@@ -9,5 +9,9 @@
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+}
+
+.unhide-navbar-link-list {
+  transform:  translateX(0) !important;
 }
