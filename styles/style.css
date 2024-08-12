@@ -180,38 +180,32 @@ a {
   color: inherit;
 }
 
-.carousel_items {
-  left: 657px;
+.slider-dots {
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 49px;
   gap: 1px;
+  cursor: pointer;
+  z-index: 999;
 }
-@media (max-width: 992px) {
-  .carousel_items {
-    display: none;
-  }
-}
-
-.item {
+.slider-dots .slider-dot {
   width: 62px;
   height: 10px;
   opacity: 0.5;
   background-color: var(--light-text-color);
 }
-
-.active {
-  opacity: 1;
+@media (max-width: 586px) {
+  .slider-dots .slider-dot {
+    width: 30px;
+  }
 }
 
 .left-icon,
 .right-icon {
-  top: 401px;
+  top: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
-}
-@media (max-width: 768px) {
-  .left-icon,
-  .right-icon {
-    top: 570px;
-  }
+  z-index: 999;
 }
 
 .left-icon {
@@ -228,13 +222,16 @@ a {
 }
 @media (max-width: 768px) {
   .right-icon {
-    right: 40px;
+    right: 31px;
   }
 }
 
 .hero .container {
   width: 100%;
   max-width: 100%;
+}
+.hero .hero-slides {
+  overflow: hidden;
 }
 .hero-product-information {
   color: var(--light-text-color);
@@ -283,21 +280,14 @@ a {
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 100%;
+  min-width: 100%;
   min-height: 100%;
-}
-.hero .left-icon,
-.hero .right-icon {
-  top: 283px;
-}
-@media (max-width: 768px) {
-  .hero .left-icon,
-  .hero .right-icon {
-    top: 300px;
-  }
 }
 .hero .button {
   font-size: 24px;
+}
+.hero .slider-dark .hero-product-information {
+  color: var(--dark-color);
 }
 
 .navbar {
@@ -406,6 +396,13 @@ a {
 .footer-copyright-container {
   padding-block: 25px;
   color: var(--second-text-color);
+}
+@media (max-width: 768px) {
+  .footer-copyright-container {
+    text-align: center;
+    max-width: 413px;
+    margin: 0 auto;
+  }
 }
 .footer-brand, .footer-icons {
   justify-content: space-between;
@@ -698,19 +695,25 @@ a {
   background-color: var(--dark-green-color);
   color: var(--light-text-color);
 }
-.classic-product .container {
-  padding-top: 112px;
-  justify-content: center;
-  gap: 30px;
+.classic-product .classic-slider {
+  margin: 0 auto;
+  max-width: 1080px;
 }
-@media (max-width: 992px) {
-  .classic-product .container {
+.classic-product .classic-slides {
+  display: flex;
+}
+.classic-product .classic-slide-content {
+  justify-content: space-between;
+  display: flex;
+  max-width: 1036px;
+  padding-top: 160px;
+}
+@media (max-width: 1024px) {
+  .classic-product .classic-slide-content {
     flex-direction: column;
+    gap: 30px;
     align-items: center;
-    padding-top: 148px;
-  }
-  .classic-product .container .carousel_items {
-    display: none;
+    text-align: center;
   }
 }
 .classic-product-information {
@@ -722,6 +725,12 @@ a {
 @media (max-width: 1280px) {
   .classic-product-information {
     max-width: 400px;
+    padding-top: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .classic-product-information {
+    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
@@ -743,10 +752,14 @@ a {
 .classic-product__paragraph {
   max-width: 341px;
 }
+@media (max-width: 1024px) {
+  .classic-product__paragraph {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 768px) {
   .classic-product__paragraph {
     font-size: 20px;
-    margin: 0 auto;
     max-width: 80%;
     line-height: 30px;
   }
@@ -754,6 +767,11 @@ a {
 .classic-product-button {
   gap: 34px;
   align-items: center;
+}
+@media (max-width: 1024px) {
+  .classic-product-button {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 768px) {
   .classic-product-button {
@@ -769,6 +787,12 @@ a {
   max-width: 510px;
   width: 100%;
   margin-bottom: -5px;
+}
+@media (max-width: 1024px) {
+  .classic-product .slider-dot {
+    background-color: var(--dark-green-color);
+    opacity: 0.1;
+  }
 }
 
 .neural-universe .container {
@@ -809,35 +833,35 @@ a {
   }
 }
 .neural-universe-buttons .button-white {
-  border: 1px solid var(--green-color);
-  color: var(--green-color);
   border-radius: 5px;
   margin-left: 10px;
+  color: var(--green-color);
+  border: 1px solid var(--green-color);
 }
 .neural-universe-buttons .button-white:hover {
   color: var(--light-text-color);
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .neural-universe-buttons .button-white {
-    border: 1px solid var(--primary-color);
     color: var(--primary-color);
+    border: 1px solid var(--primary-color);
   }
   .neural-universe-buttons .button-white:hover {
     background-color: var(--primary-color);
   }
 }
 .neural-universe-buttons .button-green:hover {
-  border: 1px solid var(--green-color);
   color: var(--green-color);
+  border: 1px solid var(--green-color);
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .neural-universe-buttons .button-green {
     background-color: var(--primary-color);
   }
   .neural-universe-buttons .button-green:hover {
     background-color: transparent;
-    border: 1px solid var(--primary-color);
     color: var(--primary-color);
+    border: 1px solid var(--primary-color);
   }
 }
 

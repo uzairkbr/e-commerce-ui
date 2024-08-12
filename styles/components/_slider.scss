@@ -1,0 +1,43 @@
+.slider-dots{ 
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 49px;
+  gap: 1px;
+  cursor: pointer;
+  z-index: 999;
+
+  .slider-dot {
+    width: 62px;
+    height: 10px;
+    opacity: 0.5;
+    background-color: var(--light-text-color);
+
+    @media (max-width: 586px) {
+     width: 30px;
+    }
+  }
+}
+
+.left-icon,
+.right-icon {
+  top: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 999;
+}
+
+.left-icon {
+  left: 49px;
+
+  @media (max-width: 768px) {
+    left: 40px;
+  }
+}
+
+.right-icon {
+  right: 49px;
+
+  @media (max-width: 768px) {
+    right: 31px;
+  }
+}
