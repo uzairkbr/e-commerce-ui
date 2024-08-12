@@ -42,19 +42,19 @@
     }
 
     .button-white {
-      border: 1px solid var(--green-color);
-      color: var(--green-color);
       border-radius: 5px;
       margin-left: 10px;
+      color: var(--green-color);
+      border: 1px solid var(--green-color);
   
       &:hover {
         color: var(--light-text-color);
       }
 
-      @media (max-width: 640px) {
-        border: 1px solid var(--primary-color);
+      @media (max-width: 768px) {
         color: var(--primary-color);
-
+        border: 1px solid var(--primary-color);
+        
         &:hover {
           background-color: var(--primary-color);
         }
@@ -63,17 +63,17 @@
   
     .button-green {
       &:hover {
-        border: 1px solid var(--green-color);
         color: var(--green-color);
+        border: 1px solid var(--green-color);
       }
       
-      @media (max-width: 640px) {
+      @media (max-width: 768px) {
         background-color: var(--primary-color);
         
         &:hover {
           background-color: transparent;
-          border: 1px solid var(--primary-color);
           color: var(--primary-color);
+          border: 1px solid var(--primary-color);
         }
       }
     }

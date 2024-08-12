@@ -3,6 +3,10 @@
     width: 100%;
     max-width: 100%;
   }
+  
+  .hero-slides {
+    overflow: hidden;
+  }
 
   &-product-information {
     color: var(--light-text-color);
@@ -50,20 +54,17 @@
   img {
     z-index: -1;
     object-fit: cover;
-    max-width: 100%;
+    min-width: 100%;
     min-height: 100%;
   }
-
-  .left-icon,
-  .right-icon {
-    top: 283px;
-
-    @media (max-width: 768px) {
-      top: 300px;
-    }
-  }
-
+  
   .button {
     font-size: 24px;
+  }
+
+  .slider-dark { 
+    .hero-product-information {
+      color: var(--dark-color);
+    }
   }
 }
