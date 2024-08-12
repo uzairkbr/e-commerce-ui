@@ -2,6 +2,10 @@
   left: 657px;
   bottom: 49px;
   gap: 1px;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 
 .item {
@@ -19,12 +23,24 @@
 .right-icon {
   top: 401px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    top: 570px
+  }
 }
 
 .left-icon {
   left: 49px;
+
+  @media (max-width: 768px) {
+    left: 40px;
+  }
 }
 
 .right-icon {
   right: 49px;
+
+  @media (max-width: 768px) {
+    right: 40px;
+  }
 }

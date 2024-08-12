@@ -10,6 +10,11 @@
     gap: 10px;
     margin-bottom: 80px;
 
+    @media (max-width: 768px) {
+      max-width: 261px;
+      margin: 48px auto;
+    }
+
     .h3 {
       color: var(--dark-color);
     }
@@ -23,10 +28,32 @@
   &-cards {
     gap: 80px 30px;
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      max-width: 328px;
+      margin: 0 auto;
+    }
   }
 
   &-card {
     max-width: 239px;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      max-width: 328px;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      transform: scale(1);
+      transition: transform 0.2s ease-in;
+
+      &:hover {
+        width: 200%;
+        transform: scale(1.02);
+      }
+    }
 
     .h5 {
       color: var(--dark-color);
@@ -61,6 +88,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .card1 {

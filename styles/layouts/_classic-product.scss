@@ -1,6 +1,3 @@
-$gap-medium: 30px;
-$gap-large: 34px;
-
 .classic-product {
   background-color: var(--dark-green-color);
   color: var(--light-text-color);
@@ -8,27 +5,64 @@ $gap-large: 34px;
   .container {
     padding-top: 112px;
     justify-content: center;
-    gap: $gap-medium;
+    gap: 30px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 148px;
+
+      .carousel_items {
+        display: none;
+      }
+    }
   }
 
   &-information {
     max-width: 509px;
     flex-direction: column;
-    gap: $gap-medium;
+    gap: 30px;
     margin-top: 60px;
+
+    @media (max-width: 1280px) {
+      max-width: 400px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 90%;
+      width: 100%;
+      text-align: center;
+    }
 
     .h1 {
       font-weight: 700;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
     }
   }
 
   &__paragraph {
     max-width: 341px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      margin: 0 auto;
+      max-width: 80%;
+      line-height: 30px;
+    }
   }
 
   &-button {
-    gap: $gap-large;
+    gap: 34px;
     align-items: center;
+
+    @media (max-width: 768px) {
+      gap: 20px;
+      flex-direction: column;
+    }
   }
 
   .button {
