@@ -23,6 +23,13 @@ function sliderFun(sliderClass, slideClass, dotsClass, prevButtonId, nextButtonI
       }
   };
 
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", function() {
+        currentSlide = index;
+        renderSlide();
+    })
+  })
+
   const renderSlide = () => {
       resetSlides();
       slides[currentSlide].style.display = "block";
