@@ -18,15 +18,17 @@ $gap-large: 30px;
     font-weight: 700;
   }
 
-  .container,
-  &__contact-info,
-  &__number,
-  &__email,
-  &__socials,
-  &__icons {
-    display: flex;
+  a {
+    color: var(--light-text-color);
+  }
+
+  .container {
     justify-content: space-between;
-    align-items: center;
+  }
+
+  &__email, 
+  &__tel {
+    gap: $gap-small;
   }
 
   &__contact-info {
@@ -36,10 +38,5 @@ $gap-large: 30px;
   &__socials,
   &__icons {
     gap: $gap-medium;
-  }
-  
-  &__email,
-  &__number {
-    gap: $gap-small;
   }
 }
