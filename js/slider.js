@@ -2,19 +2,19 @@ function sliderFun(sliderClass, slideClass, dotsClass, prevButtonId, nextButtonI
   const slider = document.querySelector(sliderClass);
   const slides = document.querySelectorAll(slideClass);
   const dotsContainer = document.querySelector(dotsClass);
-  const prevButton = document.getElementById(prevButtonId);
-  const nextButton = document.getElementById(nextButtonId);
+  const prevButton = document.querySelector(prevButtonId);
+  const nextButton = document.querySelector(nextButtonId);
 
   let currentSlide = 0;
   const totalSlides = slides.length;
 
   for (let i = 0; i < totalSlides; i++) {
     const div = document.createElement("div");
-    div.classList.add("slider-dot");
+    div.classList.add("slider-pagination");
     dotsContainer.appendChild(div);
   }
 
-  const dots = document.querySelectorAll(`${dotsClass} .slider-dot`);
+  const dots = document.querySelectorAll(`${dotsClass} .slider-pagination`);
 
   const resetSlides = () => {
     for (let i = 0; i < totalSlides; i++) {
@@ -49,6 +49,6 @@ function sliderFun(sliderClass, slideClass, dotsClass, prevButtonId, nextButtonI
   renderSlide();
 }
 
-sliderFun(".hero-slider", ".hero-slide", ".hero-slider-dots ", "hero-left-icon", "hero-right-icon");
-sliderFun(".classic-slider", ".classic-slide", ".classic-slider-dots", "classic-left-icon", "classic-right-icon");
+sliderFun(".hero__slider", ".hero__slide", ".hero__slider-pagination ", ".hero__left-arrow", ".hero__right-arrow");
+sliderFun(".classic-slider", ".classic-slide", ".classic-slider-pagination", ".classic-left-arrow", ".classic-right-arrow");
 

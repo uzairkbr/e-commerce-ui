@@ -1,9 +1,9 @@
-.container {
+.container-lg {
   margin: 0 auto;
   max-width: var(--container-width);
 }
 
-.small-container {
+.conatiner-sm {
   margin: 0 auto;
   max-width: var(--small-container-width);
 }
@@ -12,6 +12,11 @@ img {
   max-width: 100%;
 }
 
-.unhide-navbar-link-list {
-  transform:  translateX(0) !important;
+.list__unhide {
+  transform: translateX(0) !important;
+  opacity: 1;
+}
+
+.active-link {
+  font-weight: 500;
 }

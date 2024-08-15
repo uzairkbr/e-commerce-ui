@@ -2,7 +2,7 @@
   background-color: var(--secondary-bg-color);
   padding: var(--container-padding);
   
-  .small-container {
+  .container-sm {
     text-align: center;
   }
 
@@ -15,7 +15,7 @@
     color: var(--second-text-color);
   }
 
-  &-category {
+  &__category {
     gap: 30px;
 
     @media (max-width: 768px) {
@@ -28,7 +28,7 @@
     }
   }
 
-  img {
+  picture {
     object-fit: cover;
     max-width: 100%;
   }
@@ -38,37 +38,37 @@
   }
 
   .category {
-    &-3 {
+    &__3 {
       flex-direction: column;
       gap: 16px;
     }
 
-    &-men {
-      button {
+    &__men {
+      .button {
         bottom: 26px;
         left: 31px;
         padding: 12px 66px;
       }
     }
 
-    &-women {
-      button {
+    &__women {
+      .button {
         bottom: 23px;
         left: 14px;
         padding: 12px 33px;
       }
     }
 
-    &-accessories {
-      button {
+    &__accessories {
+      .button {
         bottom: 18px;
         left: 18px;
         padding: 12px 26px;
       }
     }
 
-    &-kids {
-      button {
+    &__kids {
+      .button {
         bottom: 18px;
         left: 18px;
         padding: 12px 40px;
