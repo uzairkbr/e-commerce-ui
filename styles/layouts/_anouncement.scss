@@ -13,17 +13,18 @@ $gap-large: 30px;
     display: none;
   }
 
-  p {
+  .container-lg {
+    justify-content: space-between;
+  }
+
+  p,
+  a{
     color: var(--light-text-color);
     font-weight: 700;
-  }
 
-  a {
-    color: var(--light-text-color);
-  }
-
-  .container {
-    justify-content: space-between;
+    @media (max-width: 1100px) {
+      font-size: 12px;
+    }
   }
 
   &__email, 
