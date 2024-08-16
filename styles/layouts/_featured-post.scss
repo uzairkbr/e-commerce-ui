@@ -58,16 +58,14 @@
       width: 100%;
     }
 
-    &::before {
-      content: "new";
+    .card-label {
       padding: 5px 10px;
-      position: absolute;
       top: 20px;
       left: 20px;
       font-size: 14px;
       font-weight: 700;
       border-radius: 3px;
-      color: var(--light-text-color);
+      color: var(--white-color);
       text-transform: uppercase;
       background-color: #E74040;  
     }
@@ -116,12 +114,22 @@
   }
 
   .button {
-    padding: 5px 10px 5px 0;
+    padding: 5px 10px;
+    display: flex;
     align-items: center;
+    text-transform: capitalize;
     gap: 10px;
     max-width: 150px;
     color: var(--second-text-color);
+    border-radius: 5px;
+    max-width: 130px;
+    transition: all 0.4s;
+
+    &:hover {
+      color: var(--primary-color);
+    }
   }
+
 
   &__timing {
     justify-content: space-between;
@@ -132,17 +140,6 @@
     .timing_comment {
       align-items: center;
       gap: 5px;
-    }
-  }
-
-  .button-transparent {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-transform: capitalize;
-
-    &:hover {
-      color: var(--dark-color);
     }
   }
 }

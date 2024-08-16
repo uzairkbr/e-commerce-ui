@@ -13,7 +13,7 @@
   
   &-green {
     background-color: var(--green-color);
-    color: var(--light-text-color);
+    color: var(--white-color);
     border-radius: 5px;
 
     &:hover {
@@ -23,17 +23,17 @@
   }
 
   &-white {
-    background-color: var(--light-text-color);
+    background-color: var(--white-color);
     
     &:hover {
       background-color: var(--dark-color);
-      color: var(--light-text-color);
+      color: var(--white-color);
      }
   }
 
   &-blue {
     background-color: var(--primary-color);
-    color: var(--light-text-color);
+    color: var(--white-color);
 
     &:hover {
       background-color: transparent;

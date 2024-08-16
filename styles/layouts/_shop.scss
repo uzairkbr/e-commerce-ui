@@ -439,7 +439,7 @@ $animation-delay: 20s;
     }
 
     .product-card {
-      background-color: var(--light-text-color);
+      background-color: var(--white-color);
 
       @media (max-width: 768px) {
         max-width: 500px;
@@ -480,7 +480,7 @@ $animation-delay: 20s;
 
   .footer {
     &-brand-container {
-      background-color: var(--light-text-color);
+      background-color: var(--white-color);
     }
 
     &-brand {
