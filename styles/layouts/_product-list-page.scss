@@ -1,0 +1,27 @@
+.product-page {
+  .announcement-bar {
+    background-color: var(--dark-green-color);
+
+    .container-lg {
+      max-width: 1000px;
+    }
+  }
+
+  .navbar {
+    &-brand-container {
+      max-width: 1042px;
+    }
+  }
+
+  .navigation {
+    .container-lg {
+      max-width: 1049px;
+      border: 1px solid red;
+    }
+
+    &-path {
+      align-items: center;
+      gap: 15px;
+    }
+  }
+}
