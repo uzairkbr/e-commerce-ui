@@ -6,7 +6,7 @@
     text-align: center;
   }
 
-  .h3 {
+  h3 {
     color: var(--dark-color);
   }
 
@@ -28,7 +28,7 @@
     }
   }
 
-  picture {
+  img {
     object-fit: cover;
     max-width: 100%;
   }
@@ -41,6 +41,11 @@
     &__3 {
       flex-direction: column;
       gap: 16px;
+      max-width: 240px;
+
+      img {
+        width: 240px;
+      }
     }
 
     &__men {
