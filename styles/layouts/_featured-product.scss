@@ -7,7 +7,7 @@
     margin: 0 auto;
   }
 
-  &-heading {
+  &__heading {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 80px;
@@ -27,7 +27,7 @@
     }
   }
 
-  &-cards {
+  &__cards {
     gap: 80px 30px;
     flex-wrap: wrap;
 
@@ -37,7 +37,7 @@
     }
   }
 
-  &-card {
+  &__card {
     max-width: 239px;
     cursor: pointer;
 
