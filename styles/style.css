@@ -1744,6 +1744,12 @@ a,
   padding: 11px 18px;
   font-size: 14px;
   color: inherit;
+  cursor: pointer;
+  transition: all 1s;
+}
+.product-list .filter-category .container-sm .filter-option-w-button select:hover {
+  border: 1px solid var(--dark-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 .product-list .filter-category .container-sm .filter-option-w-button select .flex {
   justify-content: center;
@@ -1803,6 +1809,12 @@ a,
   font-weight: 700;
   border: 1px solid var(--border-color);
   color: var(--primary-color);
+  cursor: pointer;
+  transition: all 1s;
+}
+.product-list .filter-category__pagination button:not(.button-disabled):hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 .product-list .filter-category__pagination #pagination__first {
   border-top-left-radius: 5px;
@@ -1818,6 +1830,7 @@ a,
 }
 .product-list .filter-category .pagination__numbers {
   counter-reset: pagination-number;
+  cursor: pointer;
 }
 .product-list .filter-category .pagination__number {
   padding: 25px 20px;
@@ -1825,6 +1838,11 @@ a,
   color: var(--primary-color);
   border: 1px solid var(--border-color);
   counter-increment: pagination-number;
+  transition: all 1s;
+}
+.product-list .filter-category .pagination__number:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 .product-list .filter-category .pagination__number::before {
   content: counter(pagination-number);
