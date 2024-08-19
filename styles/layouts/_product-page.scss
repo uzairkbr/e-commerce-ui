@@ -1,10 +1,20 @@
+$container-sm: 1050px;
+$padding-inline: 30px;
+
 .product-page {
   .announcement-bar {
     background-color: var(--dark-green-color);
 
     .container-lg {
       justify-content: center;
+      max-width: 1128px;
+      padding-inline: 54px;
       gap: 50px;
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 12px;
     }
 
     p {
@@ -12,7 +22,7 @@
       color: var(--white-color);
 
       @media (max-width: 1100px) {
-        font-size: 12px;
+        font-size: 10px;
       }
     }
 
@@ -21,10 +31,10 @@
     }
 
     svg {
-      path {
-        &:hover {
-          fill: var(--dark-color) !important;
-        }
+      &:hover{
+        path {
+           fill: var(--dark-color) !important;
+         }  
       }
     }
   }
@@ -39,7 +49,7 @@
     }
   
     .container-lg {
-      max-width: 1092px;
+      max-width: $container-sm;
       margin: 0 auto;
   
       @media (max-width: 1100px) {
@@ -60,7 +70,7 @@
     }
   
     &__link-list {
-      gap: 200px;
+      gap: 125px;
   
       @media (max-width: 1200px) {
         gap: 150px;
@@ -175,15 +185,20 @@
   
   .navigation {
     background-color: var(--light-grey-color);
-    padding-block: 34px;
+  
+    .container-lg {
+      padding: 34px 30px 34px 30px;
+      max-width: 1090px;
+      margin-inline: auto;
 
-    @media (max-width: 768px) {
-      padding-block: 24px;
+      @media (max-width: 992px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
     
     &-path {
-      max-width: 1033px;
-      margin: 0 auto;
       gap: 15px;
       align-items: center;
 
@@ -205,14 +220,17 @@
       padding-bottom: 0;
     }
 
-    .small-container {
+    .container-sm {
       max-width: 1052px;
+      margin-inline: auto;
+      padding-inline: $padding-inline;
       gap: 30px;
 
       @media (max-width: 1042px) {
         flex-direction: column;
         align-items: center;
         max-width: 700px;
+        margin-inline: auto;
         padding: 48px 33px;
       }
     }
@@ -379,6 +397,12 @@
 
   .information {
 
+    .flex {
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-inline: $padding-inline;
+    }
+
     @media (max-width: 1024px) {
       .flex {
         flex-direction: column;
@@ -387,7 +411,7 @@
       }
     }
 
-    &-links {
+    &__links {
       gap: 48px;
       padding-block: 34px;
       padding-bottom: 40px;
@@ -412,19 +436,18 @@
       margin: 41px auto 25px auto;
     }
 
-    &-image {
-
+    &__image {
       img {
         box-shadow: 12px 10px 5px 0px rgba(196,196,196,1);
         border-radius: 5px;
       }
     }
 
-    &-text {
+    &__text {
       max-width: 332px;
       color: var(--second-text-color);
 
-      .h3 {
+      h3 {
         color: var(--dark-color);
       }
 
@@ -445,6 +468,10 @@
       flex-direction: column;
       gap: 10px;
       margin-block: 30px;
+
+      @media (max-width: 1024px) {
+        margin-bottom: 0;
+      }
     }
 
     &-question {
@@ -455,12 +482,18 @@
   }
 
   .best-seller {
-
     background-color: var(--light-grey-color);
 
-    .small-container {
+    .container-sm {
       max-width: 1124px;
+      margin-inline: auto;
       padding: 48px 38px;
+
+      h3 {
+        @media (max-width: 1024px) {
+          text-align: center;
+        }
+      }
 
       .border-container {
         width: 100%;
@@ -468,15 +501,9 @@
         background-color: var(--border-color);
         margin-block: 24px;
       }
-
-      .product-card-details {
-        flex-direction: column;
-        gap: 10px;
-        padding: 25px;
-      }
     }
 
-    &-products {
+    &__products {
       max-width: 1049px;
       flex-wrap: wrap;
       gap: 24px 29px;
@@ -486,13 +513,17 @@
       }
     }
 
-    .product-card {
+    .product__card-details {
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 25px;
+    }
+
+    .product__card {
       background-color: var(--white-color);
 
       @media (max-width: 768px) {
-        max-width: 500px;
-        width: 100%;
-
         img {
           width: 100%;
         } 
@@ -527,16 +558,17 @@
   }
 
   .footer {
-    &-brand-container {
-      background-color: var(--white-color);
+    &__brand-container {
+      background-color: var(--white-color) !important;
+      padding: 50px 30px;
     }
 
-    &-brand {
-      border-bottom: 1px solid var(--border-color);
-
-      @media (max-width: 768px) {
-        border: transparent;
-      }
+    &__brand-w-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: $container-sm;
+      margin-inline: auto;
     }
   }
 }

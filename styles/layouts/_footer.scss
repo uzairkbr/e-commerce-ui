@@ -16,6 +16,7 @@
   &__navs{
     padding: 50px 24px;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
     max-width: 1098px;
     margin-inline: auto;
