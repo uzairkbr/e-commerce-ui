@@ -1455,7 +1455,7 @@ a,
 }
 .product-page .product .cta-svg:hover {
   background: #60afdc;
-  transform: rotate(360deg);
+  transform: scale(0.9);
 }
 .product-page .product .cta-svg:hover path {
   fill: #fff;
@@ -1597,7 +1597,6 @@ a,
   }
 }
 .product-page .footer__brand-container {
-  background-color: var(--white-color) !important;
   padding: 50px 30px;
 }
 .product-page .footer__brand-w-icons {
