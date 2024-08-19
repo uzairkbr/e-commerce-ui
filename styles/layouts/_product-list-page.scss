@@ -127,7 +127,7 @@
         &:hover {
           img {
             border-radius: 10px;
-            transform: scale(1.02);
+            transform: scale(1.05);
           }
         }
 
@@ -165,10 +165,25 @@
 
       .btn-group {
         gap: 15px;
-        div {
+        button {
           padding: 15px;
           border: 1px solid var(--border-color);
           border-radius: 5px;
+          cursor: pointer;
+
+          svg {
+            path {
+              transition: all 0.6s;
+            }
+          }
+
+          &:hover {
+            svg {
+              path {
+                fill: var(--primary-color);
+              }
+            }
+          }
         }
       }
 
