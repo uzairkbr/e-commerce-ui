@@ -1,4 +1,4 @@
-.shop {
+.product-page {
   .announcement-bar {
     background-color: var(--dark-green-color);
 
@@ -19,12 +19,24 @@
     h6 {
       font-weight: 700;
     }
+
+    svg {
+      path {
+        &:hover {
+          fill: var(--dark-color) !important;
+        }
+      }
+    }
   }
 
   .navbar {
     padding: 28px 30px;
     font-weight: 700;
     background-color: var(--white-color);
+
+    @media (max-width: 992px) {
+      padding: 23px 35px;
+    }
   
     .container-lg {
       max-width: 1092px;
@@ -37,10 +49,6 @@
       @media (max-width: 992px) {
         justify-content: space-between;
       }
-    }
-  
-    @media (max-width: 992px) {
-      padding: 23px 35px;
     }
   
     &__brand {
@@ -59,11 +67,12 @@
       }
   
       @media (max-width: 992px) {
+        padding-top: 81px;
         position: fixed;
         left: 0;
         top: 75px;
         background-color: var(--white-color);
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         gap: 35px;
         font-size: 30px;
@@ -71,13 +80,12 @@
         height: 100%;
         transform: translateX(-100%);
         z-index: 999;
-        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in;
+        transition: transform 0.6s ease-in-out, opacity 0.6s ease-in;
       }
     }
   
     ul {
       gap: 15px;
-      font-size: 14px;
   
       @media (max-width: 992px) {
         flex-direction: column;
@@ -101,81 +109,63 @@
         flex-direction: column;
         gap: 30px;
       }
-    }
-  
-    &__search {
+
       svg {
-        width: 34px;
-        height: 34px;
+        @media (max-width: 992px) {
+          height: 34px;
+          width: 34px;
+        }
+
         path {
           fill: var(--primary-color);
-  
-          @media (max-width: 992px) {
-            fill: var(--dark-color);
-          }
         }
-      }
+    }
   
-      .cart-icon,
-      .fav-icon {
-        display: flex;
-        align-items: center;
-        gap: 7px;
-  
-        span {
-          display: inline-block;
-        }
-  
-        @media (max-width: 992px) {
-          display: none;
-        }
+    .cart-icon,
+    .fav-icon {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      span {
+        display: inline-block;
+        font-size: 12px;
       }
     }
+  }
   
     &__login {
       color: var(--primary-color);
       display: flex;
       align-items: center;
       gap: 6px;
-  
-      @media (max-width: 992px) {
-        display: none;
-      }
-  
+
       svg {
         @media (max-width: 992px) {
           width: 27px;
           height: 28px;
+          
+          path {
+            fill: var(--primary-color);
+          }
         }
       }
     }
-  
-    .fav-icon {
-      @media (max-width: 992px) {
-        display: none;
-      }
-    }
-  
-    .cart-icon__item {
-      @media (max-width: 992px) {
-        display: none;
-      }
-    }
-  
+    
     #hamburger-icon {
       cursor: pointer;
       position: relative;
       z-index: 999;
       display: none;
-  
+
       @media (max-width: 992px) {
         display: block;
       }
     }
-  
+
     svg {
       color: var(--primary-color);
-  
+
       @media (max-width: 992px) {
         width: 24px;
         height: 24px;
@@ -183,138 +173,6 @@
     }
   }
   
-
-  // .navbar {
-  //   padding: 23px 0 23px 35px;
-
-  //   .container-lg {
-  //     max-width: 1092px;
-  //     margin: 0 auto;
-
-  //     @media (max-width: 1100px) {
-  //       justify-content: space-around;
-  //     }
-  //   }
-
-  //   @media (max-width: 992px) {
-  //     padding: 23px 35px;
-
-  //     // .navbar__link-list {
-  //     //   flex-direction: column;
-  //     //   align-items: center;
-  //     //   justify-content: center;
-  //     //   gap: 30px;
-  //     //   font-size: 30px;
-  //     //   position: fixed;
-  //     //   top: 85px;
-  //     //   left: 0;
-  //     //   font-weight: 400;
-  //     //   width: 100%;
-  //     //   height: 100%;
-  //     //   transform: translateX(-100%);
-  //     //   background-color: var(--white-color);
-  //     //   z-index: 999;
-  //     // }
-  //   }
-
-  //   &__brand {
-  //     @media (max-width: 1100px) {
-  //       gap: 80px;
-  //     }
-  //   }
-
-  //   &__link-list {
-  //     gap: 200px;
-
-  //     @media (max-width: 1200px) {
-  //       gap: 150px;
-        
-  //     }
-
-  //     @media (max-width: 992px) {
-  //       position: fixed;
-  //       left: 0;
-  //       top: 75px;
-  //       background-color: var(--white-color);
-  //       justify-content: center;
-  //       align-items: center;
-  //       gap: 35px;
-  //     }
-  //   }
-
-  //   // &__list {
-  //   //   gap: 15px;
-
-  //   //   @media (max-width: 992px) {
-  //   //     flex-direction: column;
-  //   //     gap: 30px;
-  //   //   }
-  //   // }
-
-  //   // .container {
-  //   //   max-width: 1042px;
-  //   //   margin: 0 auto;
-  //   // }
-
-  //   &__icons,
-  //   &__search {
-  //     gap: 30px;
-
-  //     @media (max-width: 1100px) {
-  //       gap: 15px;
-  //     }
-
-  //     @media (max-width: 992px) {
-  //       flex-direction: column;
-  //       gap: 30px;
-  //     }
-  //   }
-
-  //   &__login {
-  //     @media (max-width: 992px) {
-  //       display: flex;
-  //       align-items: center;
-  //       gap: 5px;
-  //       font-size: 30px;
-  //     }
-
-  //     svg {
-  //       @media (max-width: 992px) {
-  //         width: 27px;
-  //         height: 28px;
-  //       }
-  //     }
-  //   }
-
-  //   &__search {
-  //     svg {
-  //       @media (max-width: 992px) {
-  //         width: 34px;
-  //         height: 34px; 
-  //       }
-
-  //       path {
-  //         fill: var(--primary-color);
-  //       }
-  //     }
-
-  //     .cart-icon,
-  //     .fav-icon {
-  //       @media (max-width: 992px) {
-  //         display: flex;
-  //         align-items: center;
-  //         gap: 7px;
-  //       }
-
-  //       span {
-  //         @media (max-width: 992px) {
-  //           display: inline-block;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
   .navigation {
     background-color: var(--light-grey-color);
     padding-block: 34px;
@@ -325,7 +183,6 @@
     
     &-path {
       max-width: 1033px;
-      padding-left: 35px;
       margin: 0 auto;
       gap: 15px;
       align-items: center;
