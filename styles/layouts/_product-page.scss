@@ -40,8 +40,6 @@ $padding-inline: 30px;
   }
 
   .navbar {
-    padding: 28px 30px;
-    font-weight: 700;
     background-color: var(--white-color);
 
     @media (max-width: 992px) {
@@ -555,17 +553,4 @@ $padding-inline: 30px;
     }
   }
 
-  .footer {
-    &__brand-container {
-      padding: 50px 30px;
-    }
-
-    &__brand-w-icons {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: $container-sm;
-      margin-inline: auto;
-    }
-  }
 }
