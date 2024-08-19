@@ -47,6 +47,8 @@
     }
 
     img {
+      height: 427px;
+      object-fit: contain;
       width: 100%;
       transform: scale(1);
       transition: transform 0.2s ease-in;
