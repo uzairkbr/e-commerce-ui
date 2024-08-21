@@ -1910,12 +1910,12 @@ a,
   background-color: var(--light-grey-color);
   padding-block: 58px;
 }
-.product-list .filter-category .worked-with .companies {
+.product-list .filter-category .worked-with .companies-container {
   flex-wrap: wrap;
   row-gap: 60px;
 }
 @media (max-width: 768px) {
-  .product-list .filter-category .worked-with .companies {
+  .product-list .filter-category .worked-with .companies-container {
     flex-direction: column;
   }
 }
@@ -2072,6 +2072,10 @@ a,
 }
 .about-us .companies .worked-with {
   padding-block: 50px;
+}
+.about-us .companies .companies-container {
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .about-us .team .container-sm {
   max-width: 1050px;
