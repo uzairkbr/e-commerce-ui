@@ -6,6 +6,7 @@
   padding: 15px 40px;
   border: 1px solid transparent;
   text-align: center;
+  border-radius: 5px;
   display: inline-block;
   text-transform: uppercase;
   overflow: hidden;
@@ -14,7 +15,6 @@
   &-green {
     background-color: var(--green-color);
     color: var(--white-color);
-    border-radius: 5px;
 
     &:hover {
      background-color: transparent;
@@ -39,15 +39,26 @@
       background-color: transparent;
       color: var(--dark-color);
       border: 1px solid var(--dark-grey-color);
+
+      svg {
+        path {
+          fill: var(--dark-color);
+        }
+      }
     }
   }
 
   &-transparent {
     background-color: transparent;
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid var(--dark-color);
+    }
   }
 }
 
 button {
   border: none;
-  background: transparent;
+  background: none;
 }
