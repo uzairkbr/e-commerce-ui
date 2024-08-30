@@ -36,37 +36,15 @@
   z-index: 999;
   transition: all 0.5s;
 
-  &::before {
-    content: "";
-    background-color: var(--dark-color);
-    width: 0;
-    height: 4px;
-    position: absolute;
-    top: 20px;
-    transition: width 0.2s linear;
-  }
-
   &:hover {
     path {
       fill: var(--dark-color);
-    }
-
-    &::before {
-      width: 50px;
-
-      @media (max-width: 768px) {
-        width: 0;
-      }
     }
   }
 }
 
 .slider-left-arrow {
   left: 49px;
-
-  &::before {
-    left: 5px;
-  }
 
   @media (max-width: 768px) {
     left: 40px;
@@ -75,10 +53,6 @@
 
 .slider-right-arrow {
   right: 49px;
-
-  &::before {
-    right: 5px;
-  }
 
   @media (max-width: 768px) {
     right: 31px;
