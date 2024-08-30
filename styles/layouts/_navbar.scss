@@ -10,6 +10,25 @@
   &__link-list {
     gap: 15px;
     font-size: 14px;
+
+    a {
+      position: relative;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--second-text-color);
+      transition: width 0.3s;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
   }
 
   &__icons,
