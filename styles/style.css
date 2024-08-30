@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+ul, ol {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -14,6 +18,7 @@ a {
 button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 h1, .h1 {
@@ -223,13 +228,6 @@ ul li {
   border: 1px solid var(--dark-color);
 }
 
-a,
-.a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
 .slider-paginations {
   left: 50%;
   transform: translateX(-50%);
@@ -345,6 +343,22 @@ a,
 .navbar__link-list {
   gap: 15px;
   font-size: 14px;
+}
+.navbar__link-list a {
+  position: relative;
+}
+.navbar__link-list a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--second-text-color);
+  transition: width 0.3s;
+}
+.navbar__link-list a:hover::after {
+  width: 100%;
 }
 .navbar__icons, .navbar__search {
   gap: 30px;
@@ -936,6 +950,10 @@ a,
 }
 .featured-post .button:hover {
   color: var(--primary-color);
+  border: 1px solid transparent;
+}
+.featured-post .button:hover svg {
+  transform: translateX(10px);
 }
 .featured-post__timing {
   justify-content: space-between;
@@ -1053,6 +1071,22 @@ a,
   font-size: 14px;
   font-weight: 700;
 }
+.footer__nav a {
+  position: relative;
+}
+.footer__nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--second-text-color);
+  transition: width 0.3s;
+}
+.footer__nav a:hover::after {
+  width: 100%;
+}
 .footer__copyright .container-sm {
   color: var(--second-text-color);
   padding-block: 25px;
@@ -1086,6 +1120,29 @@ a,
 .footer__icons {
   gap: 20px;
   margin-right: 62px;
+}
+.footer__icons button {
+  position: relative;
+}
+.footer__icons button:hover::before {
+  transform: translateY(-35px);
+  opacity: 1;
+}
+.footer__icons button::before {
+  content: attr(data-social);
+  position: absolute;
+  left: -30px;
+  font-size: 12px;
+  background-color: var(--social-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--white-color);
+  font-weight: 700;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.footer__icons button:last-child::before {
+  left: -20px;
 }
 .footer .h5 {
   margin-bottom: 20px;

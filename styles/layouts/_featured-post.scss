@@ -127,6 +127,11 @@
 
     &:hover {
       color: var(--primary-color);
+      border: 1px solid transparent;
+
+      svg {
+        transform: translateX(10px);
+      }
     }
   }
 
