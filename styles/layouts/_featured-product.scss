@@ -40,23 +40,26 @@
   &__card {
     max-width: 239px;
     cursor: pointer;
+    padding-bottom: 40px;
+    overflow: hidden;
+    transition: box-shadow 0.7s;
 
     @media (max-width: 768px) {
       max-width: 328px;
       width: 100%;
     }
 
+    &:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+      img {
+        transform: scale(1.03);
+      }
+    }
+
     img {
       height: 427px;
-      object-fit: contain;
-      width: 100%;
-      transform: scale(1);
       transition: transform 0.2s ease-in;
-
-      &:hover {
-        width: 200%;
-        transform: scale(1.02);
-      }
     }
 
     .h5 {
