@@ -1,6 +1,6 @@
 .footer {
   .h3 {
-    color: var(--dark-color);
+    color: var(--color-dark);
   }
   
   &__brand,
@@ -101,6 +101,10 @@
         &::before {
           transform: translateY(-35px);
           opacity: 1;
+        }
+
+        path {
+          fill: var(--social-color);
         }
       }
     }

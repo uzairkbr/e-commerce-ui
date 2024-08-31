@@ -42,7 +42,7 @@ $container-width: 1050px;
         color: var(--primary-color);
 
         &:hover {
-          color: var(--dark-color);
+          color: var(--color-dark);
         }
       }
     }
@@ -63,7 +63,7 @@ $container-width: 1050px;
     }
 
     &__product-information {
-      color: var(--dark-color);
+      color: var(--color-dark);
       margin: 0;
       padding: 0;
 
@@ -159,7 +159,7 @@ $container-width: 1050px;
       flex-direction: column;
 
       .h1 {
-        color: var(--dark-color);
+        color: var(--color-dark);
         font-weight: 700;
       }
     }
