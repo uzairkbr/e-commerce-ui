@@ -23,7 +23,7 @@
 
     .h4,
     p {
-      color: var(--second-text-color);
+      color: var(--color-second-text);
     }
   }
 
@@ -68,7 +68,7 @@
 
     p {
       font-weight: 700;
-      color: var(--second-text-color);
+      color: var(--color-second-text);
     }
   }
 
@@ -79,11 +79,11 @@
   }
 
   .card-price {
-    color: var(--muted-color);
+    color: var(--color-muted);
   }
 
   .card-sale-price {
-    color: var(--dark-green-color);
+    color: var(--color-dark-green);
   }
 
   .card-colors {
@@ -99,15 +99,15 @@
   }
 
   .card1 {
-    background-color: var(--primary-color);
+    background-color: var(--color-primary);
   }
   
   .card2 {
-    background-color: var(--dark-green-color);
+    background-color: var(--color-dark-green);
   }
   
   .card3 {
-    background-color: var(--orange-color);
+    background-color: var(--color-orange);
   }
   
   .card4 {

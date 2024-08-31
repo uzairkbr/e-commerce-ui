@@ -13,8 +13,8 @@
   transition: all 0.3s ease-in;
   
   &-green {
-    background-color: var(--green-color);
-    color: var(--white-color);
+    background-color: var(--color-green);
+    color: var(--color-white);
 
     &:hover {
      background-color: transparent;
@@ -23,22 +23,22 @@
   }
 
   &-white {
-    background-color: var(--white-color);
+    background-color: var(--color-white);
     
     &:hover {
       background-color: var(--color-dark);
-      color: var(--white-color);
+      color: var(--color-white);
      }
   }
 
   &-blue {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    background-color: var(--color-primary);
+    color: var(--color-white);
 
     &:hover {
       background-color: transparent;
       color: var(--color-dark);
-      border: 1px solid var(--dark-grey-color);
+      border: 1px solid var(--color-dark-grey);
 
       svg {
         path {
