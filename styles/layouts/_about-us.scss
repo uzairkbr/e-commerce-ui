@@ -39,7 +39,7 @@ $container-width: 1050px;
       }
 
       .button-transparent {
-        color: var(--primary-color);
+        color: var(--color-primary);
 
         &:hover {
           color: var(--color-dark);
@@ -176,7 +176,7 @@ $container-width: 1050px;
   }
 
   .companies {
-    background-color: var(--light-grey-color);
+    background-color: var(--color-light-grey);
 
     .container-sm {
       flex-direction: column;
@@ -277,7 +277,7 @@ $container-width: 1050px;
       padding-block: 30px;
 
       p {
-        color: var(--second-text-color);
+        color: var(--color-second-text);
       }
     }
 
@@ -287,7 +287,7 @@ $container-width: 1050px;
   }
 
   .text-w-media {
-    background-color: var(--hover-color);
+    background-color: var(--color-hover);
   
     .container-sm {
       max-width: 1440px;
@@ -330,8 +330,8 @@ $container-width: 1050px;
       }
   
       .button {
-        color: var(--white-color);
-        border: 1px solid var(--light-grey-color);
+        color: var(--color-white);
+        border: 1px solid var(--color-light-grey);
       }
     }
   

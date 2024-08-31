@@ -3,7 +3,7 @@ $padding-inline: 30px;
 
 .product-page {
   .announcement-bar {
-    background-color: var(--dark-green-color);
+    background-color: var(--color-dark-green);
 
     .container-lg {
       justify-content: center;
@@ -19,7 +19,7 @@ $padding-inline: 30px;
 
     p {
       font-weight: 700;
-      color: var(--white-color);
+      color: var(--color-white);
 
       @media (max-width: 1100px) {
         font-size: 10px;
@@ -40,7 +40,7 @@ $padding-inline: 30px;
   }
 
   .navbar {
-    background-color: var(--white-color);
+    background-color: var(--color-white);
 
     @media (max-width: 992px) {
       padding: 23px 35px;
@@ -79,7 +79,7 @@ $padding-inline: 30px;
         position: fixed;
         left: 0;
         top: 75px;
-        background-color: var(--white-color);
+        background-color: var(--color-white);
         justify-content: flex-start;
         align-items: center;
         gap: 35px;
@@ -125,7 +125,7 @@ $padding-inline: 30px;
         }
 
         path {
-          fill: var(--primary-color);
+          fill: var(--color-primary);
         }
     }
   
@@ -143,7 +143,7 @@ $padding-inline: 30px;
   }
   
     &__login {
-      color: var(--primary-color);
+      color: var(--color-primary);
       display: flex;
       align-items: center;
       gap: 6px;
@@ -154,7 +154,7 @@ $padding-inline: 30px;
           height: 28px;
           
           path {
-            fill: var(--primary-color);
+            fill: var(--color-primary);
           }
         }
       }
@@ -172,7 +172,7 @@ $padding-inline: 30px;
     }
 
     svg {
-      color: var(--primary-color);
+      color: var(--color-primary);
 
       @media (max-width: 992px) {
         width: 24px;
@@ -182,7 +182,7 @@ $padding-inline: 30px;
   }
   
   .navigation {
-    background-color: var(--light-grey-color);
+    background-color: var(--color-light-grey);
   
     .container-lg {
       padding: 34px 30px 34px 30px;
@@ -211,7 +211,7 @@ $padding-inline: 30px;
   }
 
   .product {
-    background-color: var(--light-grey-color);
+    background-color: var(--color-light-grey);
     padding: 0 30px 48px 30px;
 
     @media (max-width: 768px) {
@@ -314,23 +314,23 @@ $padding-inline: 30px;
     }
 
     &-reviews {
-      color: var(--second-text-color);
+      color: var(--color-second-text);
     }
 
     &-availability {
       margin: 10px 0 32px 0;
-      color: var(--second-text-color);
+      color: var(--color-second-text);
 
       span {
-        color: var(--primary-color);
+        color: var(--color-primary);
         margin-left: 4px;
       }
     }
 
     &-description {
       padding-bottom: 27px;
-      color: var(--dark-grey-color);
-      border-bottom: 1px solid var(--muted-color);
+      color: var(--color-dark-grey);
+      border-bottom: 1px solid var(--color-muted);
     }
 
     &-colors {
@@ -345,15 +345,15 @@ $padding-inline: 30px;
       cursor: pointer;
 
       &:nth-child(1) {
-        background-color: var(--primary-color);
+        background-color: var(--color-primary);
       }
 
       &:nth-child(2) {
-        background-color: var(--green-color);
+        background-color: var(--color-green);
       }
       
       &:nth-child(3) {
-        background-color: var(--orange-color);
+        background-color: var(--color-orange);
       }
       
       &:nth-child(4) {
@@ -379,7 +379,7 @@ $padding-inline: 30px;
       height: 40px;
       padding: 12px;
       border-radius: 50%;
-      border: 1px solid var(--muted-color);
+      border: 1px solid var(--color-muted);
       cursor: pointer;
       transition: transform 0.8s;
 
@@ -420,7 +420,7 @@ $padding-inline: 30px;
       flex-wrap: wrap;
       padding-block: 34px;
       padding-bottom: 40px;
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--color-border);
 
       @media (max-width: 768px) {
         gap: 10px;
@@ -428,11 +428,11 @@ $padding-inline: 30px;
       }
 
       .h6 {
-        color: var(--second-text-color);
+        color: var(--color-second-text);
       }
 
       span {
-        color: var(--dark-green-color);
+        color: var(--color-dark-green);
         margin-left: 8px;
       }
     }
@@ -451,7 +451,7 @@ $padding-inline: 30px;
 
     &__text {
       max-width: 332px;
-      color: var(--second-text-color);
+      color: var(--color-second-text);
 
       h3 {
         color: var(--color-dark);
@@ -483,7 +483,7 @@ $padding-inline: 30px;
     &__question {
       display: flex;
       gap: 20px;
-      color: var(--second-text-color);
+      color: var(--color-second-text);
       cursor: pointer;
       display: flex;
       justify-content: flex-start;
@@ -491,10 +491,10 @@ $padding-inline: 30px;
       transition: text-decoration 0.5s;
 
       &:hover { 
-        color: var(--primary-color);
+        color: var(--color-primary);
 
         path {
-          fill: var(--primary-color);
+          fill: var(--color-primary);
         }
 
         .information__answer {
@@ -509,14 +509,14 @@ $padding-inline: 30px;
       font-size: 12px;
       max-width: 275px;
       line-height: 1.4;
-      background-color: var(--light-grey-color);
+      background-color: var(--color-light-grey);
       transition: max-height 0.7s;
     }
 
   }
 
   .best-seller {
-    background-color: var(--light-grey-color);
+    background-color: var(--color-light-grey);
 
     .container-sm {
       max-width: 1124px;
@@ -532,7 +532,7 @@ $padding-inline: 30px;
       .border-container {
         width: 100%;
         height: 1px;
-        background-color: var(--border-color);
+        background-color: var(--color-border);
         margin-block: 24px;
       }
     }
@@ -555,7 +555,7 @@ $padding-inline: 30px;
     }
 
     .product__card {
-      background-color: var(--white-color);
+      background-color: var(--color-white);
       transition: box-shadow .5s;
 
       @media (max-width: 768px) {
@@ -570,11 +570,11 @@ $padding-inline: 30px;
     }
 
     .card-price {
-      color: var(--muted-color);
+      color: var(--color-muted);
       margin-bottom: 10px;
 
       .card-sale-price {
-        color: var(--dark-green-color);
+        color: var(--color-dark-green);
         margin-left: 5px;
       }
     }
