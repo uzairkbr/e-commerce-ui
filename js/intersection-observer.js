@@ -12,7 +12,6 @@ const startCounting = (element, endValue, inter, suffix = "") => {
     startValue++;
 
     element.innerText = startValue + suffix;
-
     if (startValue >= endValue) {
       clearInterval(counter);
     }
