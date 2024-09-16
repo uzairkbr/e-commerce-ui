@@ -156,7 +156,7 @@ ul li {
   display: inline-block;
   text-transform: uppercase;
   overflow: hidden;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 .button-green {
   background-color: var(--color-green);
