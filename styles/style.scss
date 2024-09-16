@@ -1,29 +1,5 @@
-@import './base/resets';
-@import './base/heading';
-@import './base/helpers';
-@import './base/variables';
-@import './base/typography';
 
+@import './base/base';
+@import './components/components';
 @import './abstracts/abstract';
-
-@import './components/icon';
-@import './components/list';
-@import './components/button';
-@import './components/slider';
-@import './components/brand';
-
-
-@import './layouts/header';
-@import './layouts/announcement';
-@import './layouts/navbar';
-@import './layouts/hero';
-@import './layouts/editors-pick';
-@import './layouts/featured-product';
-@import './layouts/classic-product';
-@import './layouts/featured-post';
-@import './layouts/neural-universe';
-@import './layouts/footer';
-@import './layouts/product-page';
-@import './layouts/product-list-page';
-@import './layouts/about-us';
-
+@import './layouts/layouts';

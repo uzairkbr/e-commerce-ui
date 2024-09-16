@@ -10,7 +10,7 @@
   display: inline-block;
   text-transform: uppercase;
   overflow: hidden;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   
   &-green {
     background-color: var(--color-green);
@@ -24,10 +24,11 @@
 
   &-white {
     background-color: var(--color-white);
-    
+
     &:hover {
       background-color: var(--color-dark);
       color: var(--color-white);
+      color: #fff;
      }
   }
 
