@@ -24,10 +24,11 @@
 
   &-white {
     background-color: var(--color-white);
-    
+
     &:hover {
       background-color: var(--color-dark);
       color: var(--color-white);
+      color: #fff;
      }
   }
 
