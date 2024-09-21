@@ -161,7 +161,7 @@ ul li {
   display: inline-block;
   text-transform: uppercase;
   overflow: hidden;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 .button-green {
   background-color: var(--color-green);
@@ -2547,6 +2547,9 @@ ul li {
   background-color: var(--color-dark);
   color: var(--color-white);
   padding-block: 70px;
+}
+.pricing .pricing-section__packages-card:nth-child(2) button:hover {
+  color: var(--color-white);
 }
 .pricing .pricing-section__packages-card:nth-child(2) h5 {
   color: var(--color-white);
