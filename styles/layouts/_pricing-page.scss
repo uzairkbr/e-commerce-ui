@@ -1,0 +1,235 @@
+.pricing {
+  .navbar {
+    .container-lg {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    &__link-list {
+      @media (max-width: 992px) {
+        background-color: #f6f6f6;
+        top: 85px;
+      }
+    }
+
+    &__icons {
+      display: none;
+      @media (max-width: 992px) {
+        display: block;
+      }
+    }
+
+    &__buttons {
+      @media (max-width: 992px) {
+        display: none;
+      }
+
+      .button-blue {
+        padding: 15px 25px;
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .button-transparent {
+        color: var(--color-primary);
+
+        &:hover {
+          color: var(--color-dark);
+        }
+      }
+    }
+
+  }
+
+  .hero {
+    padding-block: 50px;
+
+    &__information {
+      flex-direction: column;
+      gap: 16px;
+
+      .h1 {
+        @media (max-width: 768px) {
+          font-size: 40px;
+        }
+      }
+
+      h5 {
+        color: var(--color-second-text);
+      }
+    }
+
+    .pricing-path {
+      gap: 15px;
+
+      h6 {
+        color: var(--color-second-text);
+      }
+    }
+  }
+
+  .pricing-section {
+    &__information {
+      max-width: 1050px;
+      padding: 112px 33px;
+      margin: 0 auto;
+      flex-direction: column;
+      gap: 48px;
+
+      @media (max-width: 768px) {
+        padding: 75px 43px 0 43px;
+      }
+    }
+
+    &__heading {
+      max-width: 625px;
+      margin: 0 auto;
+      text-align: center;
+
+      p {
+        width: 75%;
+        margin: 0 auto;
+      }
+    }
+
+    &__packages {
+      gap: 10px;
+    }
+
+    &__packages-toggle {
+      width: 45px;
+      padding: 3px 4px;
+      border-radius: 16px;
+      border: 1px solid var(--color-primary);
+    }
+
+    &__packages-toggler {
+      width: 19px;
+      height: 19px;
+      border-radius: 16px;
+      background-color: var(--color-input-border);
+      border: 1px solid #d0d0d0d0;
+      transition: 0.4s;
+    }
+    
+    &__packages-toggler.monthly {
+      transform: translateX(0);
+    }
+    
+    &__packages-toggler.yearly {
+      transform: translateX(90%);
+    }
+
+    &__discount {
+      padding: 10px 20px;
+      border-radius: 37px;
+      color: var(--color-primary);
+      background-color: var(--color-faded-primary);
+    }
+
+    &__packages-cards { 
+      flex-wrap: wrap;
+      padding-top: 40px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 30px;
+        padding-block: 80px;
+      }
+    }
+
+    &__packages-card {
+      max-width: 327px;
+      flex-direction: column;
+      gap: 35px;
+      padding: 50px 40px;
+      border: 1px solid var(--color-primary);
+      border-radius: 10px;
+
+      &:nth-child(2) {
+        background-color: var(--color-dark);
+        color: var(--color-white);
+
+        h5 {
+          color: var(--color-white);
+        }
+      }
+
+      h5 {
+        color: var(--color-second-text);
+        max-width: 160px;
+        text-align: center;
+      }
+
+      .card__pricing {
+        gap: 10px;
+        color: var(--color-primary);
+      }
+
+      .card__features li {
+        display: flex;
+        align-items: center;
+        gap: 15px 10px;
+      }
+
+      .card__features li span {
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .card__features li:not(last-child) {
+        margin-bottom: 15px;
+      }
+
+      button {
+        width: 100%;
+        letter-spacing: 0.2px;
+      }
+    }
+
+  }
+
+  .worked-with-companies {
+    text-align: center;
+    padding: 80px 0;
+
+    h4 {
+      margin-bottom: 40px;
+      font-weight: 500;
+
+      @media (max-width: 768px) {
+        max-width: 230px;
+        margin: 0 auto 73px auto;
+      }
+    }
+
+    .flex-center {
+      gap: 40px;
+      flex-wrap: wrap;
+
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .footer {
+    &__brand,
+    &__copyright {
+      background-color: transparent;
+      padding-inline: 24px;
+
+      @media (max-width: 768px) {
+        padding-inline: 46px;
+      }
+    }
+
+    &__brand {
+      .container-sm {
+        border-bottom: 1px solid var(--color-input-border);
+      }
+    }
+  }
+}
