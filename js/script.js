@@ -33,3 +33,16 @@ for (var i = 0; i < faqs.length; i++) {
     }
   });
 }
+
+// Pricing Section Packages Toogle;
+document.addEventListener("DOMContentLoaded", function() {
+  const packagesToggle = document.querySelector(".pricing-section__packages-toggle");
+  const packagesToggler = document.querySelector(".pricing-section__packages-toggler");
+
+  packagesToggle.addEventListener("click", function() {
+    const isMonthly = packagesToggler.classList.contains("monthly");
+
+    packagesToggler.classList.toggle("monthly", !isMonthly);
+    packagesToggler.classList.toggle("yearly", isMonthly);
+  });
+});

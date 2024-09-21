@@ -1,0 +1,22 @@
+.blog {
+  .featured-post {
+    max-width: 1050px;
+    padding: 160px 40px;
+    margin-inline: auto;
+
+    &__cards {
+      gap: 80px 30px;
+    }
+
+    &__card {
+      max-width: 470px;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
