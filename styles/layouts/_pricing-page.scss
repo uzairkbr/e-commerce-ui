@@ -131,6 +131,7 @@
     &__packages-cards { 
       flex-wrap: wrap;
       padding-top: 40px;
+      align-items: flex-end;
 
       @media (max-width: 768px) {
         flex-direction: column;
@@ -150,6 +151,7 @@
       &:nth-child(2) {
         background-color: var(--color-dark);
         color: var(--color-white);
+        padding-block: 70px;
 
         h5 {
           color: var(--color-white);
@@ -187,7 +189,6 @@
         letter-spacing: 0.2px;
       }
     }
-
   }
 
   .worked-with-companies {
