@@ -2525,6 +2525,7 @@ ul li {
 .pricing .pricing-section__packages-cards {
   flex-wrap: wrap;
   padding-top: 40px;
+  align-items: flex-end;
 }
 @media (max-width: 768px) {
   .pricing .pricing-section__packages-cards {
@@ -2544,6 +2545,7 @@ ul li {
 .pricing .pricing-section__packages-card:nth-child(2) {
   background-color: var(--color-dark);
   color: var(--color-white);
+  padding-block: 70px;
 }
 .pricing .pricing-section__packages-card:nth-child(2) h5 {
   color: var(--color-white);
