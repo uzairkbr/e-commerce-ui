@@ -263,12 +263,21 @@
   
         &:hover {
           &::before {
-            transform: translateY(35px);
+            transform: translateY(40px);
             opacity: 1;
           }
   
           path {
             fill: var(--color-social);
+          }
+        }
+      }
+
+      a:nth-child(1) {
+        &:hover {
+          &::before {
+            transform: translateY(35px);
+            opacity: 1;
           }
         }
       }
