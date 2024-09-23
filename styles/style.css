@@ -2612,6 +2612,59 @@ ul li {
     flex-direction: column;
   }
 }
+.pricing .free-trail__container {
+  flex-direction: column;
+  gap: 30px;
+  max-width: 600px;
+  text-align: center;
+  margin-inline: auto;
+  padding-block: 160px;
+}
+@media (max-width: 768px) {
+  .pricing .free-trail__container {
+    padding-inline: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .pricing .free-trail__container h2 {
+    font-size: 40px;
+  }
+}
+.pricing .free-trail__container p {
+  max-width: 411px;
+}
+.pricing .free-trail__socials {
+  gap: 34px;
+}
+.pricing .free-trail__socials a {
+  position: relative;
+}
+.pricing .free-trail__socials a:hover::before {
+  transform: translateY(35px);
+  opacity: 1;
+}
+.pricing .free-trail__socials a:hover path {
+  fill: var(--color-social);
+}
+.pricing .free-trail__socials a::before {
+  content: attr(data-social);
+  position: absolute;
+  left: -20px;
+  font-size: 12px;
+  background-color: var(--color-social);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--color-white);
+  font-weight: 700;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.pricing .free-trail__socials a:nth-child(2)::before, .pricing .free-trail__socials a:nth-child(3):before {
+  left: -25px;
+}
+.pricing .free-trail__socials svg:nth-of-type(2):hover path {
+  fill: #395185;
+}
 .pricing .footer__brand, .pricing .footer__copyright {
   background-color: transparent;
   padding-inline: 24px;
