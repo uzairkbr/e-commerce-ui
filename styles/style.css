@@ -2528,7 +2528,7 @@ ul li {
   padding-top: 40px;
   align-items: flex-end;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .pricing .pricing-section__packages-cards {
     flex-direction: column;
     gap: 30px;
@@ -2542,6 +2542,16 @@ ul li {
   padding: 50px 40px;
   border: 1px solid var(--color-primary);
   border-radius: 10px;
+}
+@media (max-width: 1100px) {
+  .pricing .pricing-section__packages-card {
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .pricing .pricing-section__packages-card {
+    padding: 50px 40px;
+  }
 }
 .pricing .pricing-section__packages-card:nth-child(2) {
   background-color: var(--color-dark);
