@@ -2640,11 +2640,15 @@ ul li {
   position: relative;
 }
 .pricing .free-trail__socials a:hover::before {
-  transform: translateY(35px);
+  transform: translateY(40px);
   opacity: 1;
 }
 .pricing .free-trail__socials a:hover path {
   fill: var(--color-social);
+}
+.pricing .free-trail__socials a:nth-child(1):hover::before {
+  transform: translateY(35px);
+  opacity: 1;
 }
 .pricing .free-trail__socials a::before {
   content: attr(data-social);
