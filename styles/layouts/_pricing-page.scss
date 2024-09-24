@@ -266,9 +266,13 @@
             transform: translateY(40px);
             opacity: 1;
           }
-  
+
           path {
             fill: var(--color-social);
+          }
+
+          .facebook-svg {
+            fill: #fff;
           }
         }
       }
@@ -300,13 +304,13 @@
         left: -25px;
       }
 
-      svg:nth-of-type(2) {
-        &:hover {
-          path {
-            fill: #395185; 
-          }
-        }
-      }
+      // svg:nth-of-type(2) {
+      //   &:hover {
+      //     path {
+      //       fill: #395185; 
+      //     }
+      //   }
+      // }
     }
   }
 
