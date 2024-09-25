@@ -224,9 +224,85 @@
       gap: 40px;
       flex-wrap: wrap;
 
-
       @media (max-width: 768px) {
         flex-direction: column;
+      }
+    }
+  }
+
+  .pricing-faqs {
+    .container-sm {
+      max-width: 1050px;
+      margin-inline: auto;
+      padding-block: 80px;
+
+      > h4 {
+        color: var(--color-second-text);
+        max-width: 552px;
+        margin-inline: auto;
+        text-align: center;
+
+        @media (max-width: 768px) {
+          padding-inline: 50px;
+        }
+      }
+    }
+
+    &__heading {
+      padding-block: 45px;
+      max-width: 650px;
+      margin-inline: auto;
+      text-align: center;
+
+      h4 {
+        max-width: 510px;
+        margin-inline: auto;
+        margin-top: 10px;
+        color: var(--color-second-text);
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+          color: var(--color-dark);
+          max-width: 280px;
+        }
+      }
+    }
+
+    .faqs__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 50px 16px;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        place-items: center;
+      }
+    }
+
+    .faq { 
+      padding: 25px;
+
+      &__question {
+        gap: 20px;
+        cursor: pointer;
+
+        svg {
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+
+      &__answer {
+        margin: 5px 0 0 30px;
+        max-width: 410px;
+        letter-spacing: 0.2px;
+        min-height: 0;
+
+        @media (max-width: 768px) {
+          margin: 32px 0 0 0;
+        }
       }
     }
   }
@@ -241,7 +317,7 @@
       padding-block: 160px;
 
       @media (max-width: 768px) {
-        padding-inline: 40px;
+        padding: 112px 40px;
       }
 
       h2 {
@@ -315,20 +391,20 @@
   }
 
   .footer {
-    &__brand,
-    &__copyright {
-      background-color: transparent;
-      padding-inline: 24px;
+      &__brand,
+      &__copyright {
+        background-color: transparent;
+        padding-inline: 24px;
 
-      @media (max-width: 768px) {
-        padding-inline: 46px;
+        @media (max-width: 768px) {
+          padding-inline: 46px;
+        }
       }
-    }
 
-    &__brand {
-      .container-sm {
-        border-bottom: 1px solid var(--color-input-border);
+      &__brand {
+        .container-sm {
+          border-bottom: 1px solid var(--color-input-border);
+        }
       }
-    }
   }
 }
