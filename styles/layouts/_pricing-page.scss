@@ -298,7 +298,8 @@
         margin: 5px 0 0 30px;
         max-width: 410px;
         letter-spacing: 0.2px;
-        min-height: 0;
+        max-height: 0;
+        overflow: hidden;
 
         @media (max-width: 768px) {
           margin: 32px 0 0 0;
