@@ -216,76 +216,6 @@ $container-width: 1050px;
     }
   }
 
-  .team {
-
-    .container-sm {
-      max-width: $container-width;
-      margin: 0 auto;
-
-      @media (max-width: 768px) {
-        padding-inline: 43px;
-      }
-    }
-
-    &__introduction {
-      max-width: 607px;
-      text-align: center;
-      margin: 0 auto;
-      padding-block: 112px;
-
-      @media (max-width: 768px) {
-        padding-inline: 13px;
-        padding-block: 45px;
-      }
-
-      p {
-        margin-top: 10px;
-      }
-    }
-
-    .team__members {
-      gap: 30px;
-      flex-wrap: wrap;
-      padding-bottom: 112px;
-
-      @media (max-width: 768px) {
-        flex-direction: column;
-      }
-    }
-
-    .team__member {
-      transition: all 0.6s;
-      overflow: hidden;
-
-      img {
-        transition: all 0.8s;
-      }
-
-      &:hover {
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-        img {
-          transform: scale(1.05);
-        }
-      }
-    }
-
-
-    .member__detail {
-      flex-direction: column;
-      gap: 10px;
-      padding-block: 30px;
-
-      p {
-        color: var(--color-second-text);
-      }
-    }
-
-    .member__socials {
-      gap: 20px;
-    }
-  }
-
   .text-w-media {
     background-color: var(--color-hover);
   
@@ -348,5 +278,75 @@ $container-width: 1050px;
         display: none;
       }
     }
+  }
+}
+
+.team {
+
+  .container-sm {
+    max-width: $container-width;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      padding-inline: 43px;
+    }
+  }
+
+  &__introduction {
+    max-width: 607px;
+    text-align: center;
+    margin: 0 auto;
+    padding-block: 112px;
+
+    @media (max-width: 768px) {
+      padding-inline: 13px;
+      padding-block: 45px;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  .team__members {
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 112px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .team__member {
+    transition: all 0.6s;
+    overflow: hidden;
+
+    img {
+      transition: all 0.8s;
+    }
+
+    &:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+
+  .member__detail {
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 30px;
+
+    p {
+      color: var(--color-second-text);
+    }
+  }
+
+  .member__socials {
+    gap: 20px;
   }
 }
