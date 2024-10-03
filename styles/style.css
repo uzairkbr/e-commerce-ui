@@ -2379,12 +2379,14 @@ ul li {
 .team .team__member {
   transition: all 0.6s;
   overflow: hidden;
+  border-radius: 5px;
 }
 .team .team__member img {
   transition: all 0.8s;
 }
 .team .team__member:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: translateY(-10px);
 }
 .team .team__member:hover img {
   transform: scale(1.05);
